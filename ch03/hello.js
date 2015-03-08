@@ -20,7 +20,7 @@ var Hello = {
 
     handle_pong: function (iq) {
         var elapsed = (new Date()).getTime() - Hello.start_time;
-        Hello.log("Received pong from server in " + elapsed + "ms.");
+        Hello.log("Received pong from server in " + elapsed + "ms." + iq + ".");
 
         Hello.connection.disconnect();
         
